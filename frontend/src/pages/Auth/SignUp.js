@@ -148,18 +148,18 @@ const SignUp = ({ history, refetch }) => {
             <Welcome>
               <div>
                 <Heading color="white">
-                  Connect with friends and the world around you.
+                  Kết nối tới bạn bè thế giới và xung quanh bạn
                 </Heading>
               </div>
 
-              <p>See photos and updates from your friends.</p>
-              <p>Follow your interests.</p>
-              <p>Hear what people are talking about.</p>
+              <p>Chia sẻ từng khoảnh khắc vui nhộn.</p>
+              <p>Tất cả đều miễn phí</p>
+              <p>Lắng nghe mọi người nói về bạn</p>
             </Welcome>
 
             <Form>
               <Spacing bottom="md">
-                <H1>Create Account</H1>
+                <H1>Đăng ký</H1>
               </Spacing>
 
               <form onSubmit={e => handleSubmit(e, signup)}>
@@ -168,7 +168,7 @@ const SignUp = ({ history, refetch }) => {
                   name="fullName"
                   values={fullName}
                   onChange={handleChange}
-                  placeholder="Full name"
+                  placeholder="Tên đầy đủ"
                   borderColor="white"
                 />
                 <Spacing top="xs" bottom="xs">
@@ -204,7 +204,7 @@ const SignUp = ({ history, refetch }) => {
 
                 <Spacing top="sm" />
                 <Button size="large" disabled={loading}>
-                  Sign up
+                  Đăng ký
                 </Button>
               </form>
             </Form>
